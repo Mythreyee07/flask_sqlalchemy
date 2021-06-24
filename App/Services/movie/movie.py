@@ -9,31 +9,26 @@ class Movies:
                 'year': self.year, 'genre': self.genre}   
 
     def get_all_movies():
-             
              return [Movies.format(movie) for movie in Movie.query.all()]
 
     def get_movie(_id):
-            
             return [Movies.format(Movie.query.filter_by(id=_id).first())]
 
     def add_movie(_title, _year, _genre):
-            
             new_movie = Movie(title=_title, year=_year, genre=_genre)
             db.session.add(new_movie)  
             db.session.commit() 
-            return(Response("Movie added", 201))
+            return jsonify({  'message': 'successfully added movie', 'error':False})
              
     def update_movie(_id, _title, _year, _genre):
-            
             movie_to_update = Movie.query.filter_by(id=_id).first()
             movie_to_update.title = _title
             movie_to_update.year = _year
             movie_to_update.genre = _genre
             db.session.commit()   
-            return( Response("Movie Updated", status=200 ))
+            return jsonify({  'message': 'successfully updated movie', 'error':False})
 
     def delete_movie(_id):
-            
             Movie.query.filter_by(id=_id).delete()
             db.session.commit()             
             return(Response("Movie Deleted", status=200))
