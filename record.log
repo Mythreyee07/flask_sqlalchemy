@@ -1,0 +1,115 @@
+2021-06-28 14:28:18,357 INFO App Thread-2 : before request
+2021-06-28 14:28:18,511 INFO App Thread-2 : Info level log
+2021-06-28 14:28:18,511 WARNING App Thread-2 : Warning level log
+2021-06-28 14:28:18,512 DEBUG App Thread-2 : [
+  {
+    "genre": "horror", 
+    "id": 1, 
+    "title": "Ring", 
+    "year": 2015
+  }
+]
+
+2021-06-28 14:28:18,513 INFO werkzeug Thread-2 : 127.0.0.1 - - [28/Jun/2021 14:28:18] "GET /movies1?id=1 HTTP/1.1" 200 -
+2021-06-28 14:30:08,458 INFO App Thread-3 : before request
+2021-06-28 14:30:08,727 INFO App Thread-3 : Info level log
+2021-06-28 14:30:08,727 WARNING App Thread-3 : Warning level log
+2021-06-28 14:30:08,728 DEBUG App Thread-3 : {
+  "error": false, 
+  "message": "successfully added movie"
+}
+
+2021-06-28 14:30:08,729 INFO werkzeug Thread-3 : 127.0.0.1 - - [28/Jun/2021 14:30:08] "POST /movies HTTP/1.1" 200 -
+2021-06-28 14:30:27,726 INFO App Thread-4 : before request
+2021-06-28 14:30:27,880 INFO App Thread-4 : Info level log
+2021-06-28 14:30:27,881 WARNING App Thread-4 : Warning level log
+2021-06-28 14:30:27,881 DEBUG App Thread-4 : {
+  "error": false, 
+  "message": "successfully updated movie"
+}
+
+2021-06-28 14:30:27,883 INFO werkzeug Thread-4 : 127.0.0.1 - - [28/Jun/2021 14:30:27] "PUT /movies?id=4 HTTP/1.1" 200 -
+2021-06-28 14:30:46,400 INFO App Thread-5 : before request
+2021-06-28 14:30:46,404 INFO App Thread-5 : Info level log
+2021-06-28 14:30:46,404 WARNING App Thread-5 : Warning level log
+2021-06-28 14:30:46,405 DEBUG App Thread-5 : {
+  "Movies": [
+    {
+      "genre": "horror", 
+      "id": 1, 
+      "title": "Ring", 
+      "year": 2015
+    }, 
+    {
+      "genre": "fantasy", 
+      "id": 2, 
+      "title": "The prince", 
+      "year": 2017
+    }, 
+    {
+      "genre": "Thriller", 
+      "id": 4, 
+      "title": "Wonder women", 
+      "year": 2007
+    }, 
+    {
+      "genre": "adventure", 
+      "id": 9, 
+      "title": "Spider man", 
+      "year": 2006
+    }, 
+    {
+      "genre": "adventure", 
+      "id": 10, 
+      "title": "Bat man", 
+      "year": 2009
+    }, 
+    {
+      "genre": "Thriller", 
+      "id": 15, 
+      "title": "Hallow man", 
+      "year": 2000
+    }, 
+    {
+      "genre": "Thriller", 
+      "id": 16, 
+      "title": "abcd", 
+      "year": 2002
+    }, 
+    {
+      "genre": "Adventure", 
+      "id": 17, 
+      "title": "Alien", 
+      "year": 2012
+    }, 
+    {
+      "genre": "Crime", 
+      "id": 18, 
+      "title": "Gone girl", 
+      "year": 2019
+    }, 
+    {
+      "genre": "Crime", 
+      "id": 20, 
+      "title": "girl", 
+      "year": 2013
+    }
+  ]
+}
+
+2021-06-28 14:30:46,406 INFO werkzeug Thread-5 : 127.0.0.1 - - [28/Jun/2021 14:30:46] "GET /movies HTTP/1.1" 200 -
+2021-06-28 14:30:53,861 INFO App Thread-6 : before request
+2021-06-28 14:30:54,077 INFO App Thread-6 : Info level log
+2021-06-28 14:30:54,077 WARNING App Thread-6 : Warning level log
+2021-06-28 14:30:54,078 DEBUG App Thread-6 : Movie Deleted
+2021-06-28 14:30:54,078 INFO werkzeug Thread-6 : 127.0.0.1 - - [28/Jun/2021 14:30:54] "DELETE /movies?id=18 HTTP/1.1" 200 -
+2021-06-28 14:31:42,254 INFO werkzeug MainThread :  * Detected change in 'E:\\flask\\App\\util\\log.py', reloading
+2021-06-28 14:31:42,328 INFO werkzeug MainThread :  * Restarting with stat
+2021-06-28 14:31:43,377 WARNING werkzeug MainThread :  * Debugger is active!
+2021-06-28 14:31:43,391 INFO werkzeug MainThread :  * Debugger PIN: 126-650-450
+2021-06-28 14:31:43,456 INFO werkzeug Thread-1 :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-28 14:31:44,541 INFO werkzeug MainThread :  * Detected change in 'E:\\flask\\App\\util\\log.py', reloading
+2021-06-28 14:31:44,622 INFO werkzeug MainThread :  * Restarting with stat
+2021-06-28 14:31:45,417 WARNING werkzeug MainThread :  * Debugger is active!
+2021-06-28 14:31:45,417 INFO werkzeug MainThread :  * Debugger PIN: 126-650-450
+2021-06-28 14:31:45,471 INFO werkzeug Thread-1 :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)

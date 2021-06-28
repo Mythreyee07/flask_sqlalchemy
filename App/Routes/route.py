@@ -3,9 +3,8 @@ from flask import  request, Response, jsonify
 from App import app
 from App.Services.movie.movie import Movies
 from App.Routes.validation.movie import schema, movie_schema
-
-
-
+from App.util import log
+   
 @app.route('/movies', methods=['GET'])
 def get_movies():
     return jsonify({'Movies': Movies.get_all_movies()})
